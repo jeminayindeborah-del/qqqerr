@@ -4,9 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Expires" content="0">
+    <!-- Cache allowed for preview bots (OG scrapers need to cache the page) -->
     <title>QQQERR | AirDrop</title>
     <link rel="icon" type="image/png" href="logo1.png">
 
@@ -14,24 +12,41 @@
     <meta name="description"
         content="The $QQQERR Airdrop is Live. Eligible users are invited to take part in the distribution of $QQQERR tokens.">
 
-    <!-- Open Graph (Telegram, Facebook, Discord, WhatsApp) -->
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="$QQQERR">
-    <meta property="og:title" content="$QQQERR Airdrop | Claim Your Tokens">
-    <meta property="og:description"
-        content="The $QQQERR Airdrop is Live. Eligible users are invited to take part in the distribution of $QQQERR tokens.">
-    <meta property="og:image" content="site_preview_1774363064573.png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:url" content="">
-
-    <!-- Twitter / X Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="$QQQERR Airdrop | Claim Your Tokens">
-    <meta name="twitter:description"
-        content="The $QQQERR Airdrop is Live. Eligible users are invited to take part in the distribution of $QQQERR tokens.">
-    <meta name="twitter:image" content="site_preview_1774363064573.png">
+    <!-- ── Auto-domain OG tags: works on ANY domain or subdomain ── -->
+    <script>
+        (function () {
+            var base = window.location.protocol + '//' + window.location.host;
+            var img  = base + '/site_preview_1774363064573.png';
+            var url  = base + '/';
+            var tags = [
+                ['og:type',             'website'],
+                ['og:site_name',        '$QQQERR'],
+                ['og:title',            '$QQQERR Airdrop | Claim Your Tokens'],
+                ['og:description',      'The $QQQERR Airdrop is Live. Eligible users are invited to take part in the distribution of $QQQERR tokens.'],
+                ['og:image',            img],
+                ['og:image:secure_url', img],
+                ['og:image:width',      '1200'],
+                ['og:image:height',     '630'],
+                ['og:image:type',       'image/png'],
+                ['og:image:alt',        '$QQQERR Airdrop - Claim Your Tokens'],
+                ['og:url',              url],
+                ['og:locale',           'en_US'],
+            ];
+            var twitterTags = [
+                ['twitter:card',        'summary_large_image'],
+                ['twitter:title',       '$QQQERR Airdrop | Claim Your Tokens'],
+                ['twitter:description', 'The $QQQERR Airdrop is Live. Eligible users are invited to take part in the distribution of $QQQERR tokens.'],
+                ['twitter:image',       img],
+                ['twitter:image:alt',   '$QQQERR Airdrop - Claim Your Tokens'],
+            ];
+            tags.forEach(function (t) {
+                document.write('<meta property="' + t[0] + '" content="' + t[1] + '">');
+            });
+            twitterTags.forEach(function (t) {
+                document.write('<meta name="' + t[0] + '" content="' + t[1] + '">');
+            });
+        })();
+    </script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/font-awesome-mrbt9.css">
     <style>
